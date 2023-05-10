@@ -1,5 +1,5 @@
 name: CI-RELEASE
-tete
+
 on:
   pull_request:
     branches: [ "release" ]
