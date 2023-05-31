@@ -61,6 +61,6 @@ jobs:
         run: |
           ssh azure-cloud "sudo systemctl stop sandbox-app"
           ssh azure-cloud "sudo rm -rf /sandbox/react-app"
-          scp -r build azure-cloud:/home/github/react-app
-          ssh azure-cloud "sudo mv /home/github/react-app /sandbox/react-app"
+          scp -r build azure-cloud:/home/adminlucas/react-app
+          ssh azure-cloud "sudo mv /home/adminlucas/react-app /sandbox/react-app"
           ssh azure-cloud "sudo systemctl start sandbox-app"
